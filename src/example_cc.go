@@ -39,7 +39,8 @@ func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface) pb.Response  {
 	var err error
 
 	if len(args) != 4 {
-		return shim.Error("Incorrect number of arguments. Expecting 4")
+		//return shim.Error("Incorrect number of arguments. Expecting 4")
+		return shim.Success(nil)
 	}
 
 	// Initialize the chaincode
